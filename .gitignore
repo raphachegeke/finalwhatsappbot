@@ -1,0 +1,4 @@
+// .gitignore
+node_modules
+auth_info/ # This is your session data folder
+.env

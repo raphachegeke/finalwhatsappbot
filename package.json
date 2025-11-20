@@ -1,0 +1,20 @@
+{
+  "name": "finalwhatsappbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc.8",
+    "express": "^5.1.0",
+    "pino": "^10.1.0",
+    "qrcode": "^1.5.4"
+  }
+}
