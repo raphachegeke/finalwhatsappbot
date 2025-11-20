@@ -40,6 +40,17 @@ async function startBot() {
       }
     });
 
+// Owner command: .status
+const owner = "254748397839@s.whatsapp.net"; // <-- your number in JID format
+
+if (msg.key.remoteJid === owner && msg.message?.conversation) {
+  const text = msg.message.conversation.trim().toLowerCase();
+
+  if (text === '.status') {
+    await sock.sendMessage(owner, { text: "Bot is alive and running 🚀" });
+  }
+}
+
     // Auto-view status + react
     sock.ev.on('messages.upsert', async (m) => {
       try {
