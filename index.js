@@ -118,7 +118,7 @@ async function startBot() {
 
         // --- WELCOME MESSAGE ---
         if (!welcomeSeen.includes(sender)) {
-          const welcomeTxt = 'Hey! I saw your message 👋\nThis is an automated bot. No replies are sent except by owner.';
+          const welcomeTxt = '';
           try { await sock.sendMessage(sender, { text: welcomeTxt }); } catch {}
           welcomeSeen.push(sender);
           saveJSON(WELCOME_DB, welcomeSeen);
