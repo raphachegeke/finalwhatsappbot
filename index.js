@@ -116,14 +116,7 @@ async function startBot() {
           }
         }
 
-        // --- WELCOME MESSAGE ---
-        if (!welcomeSeen.includes(sender)) {
-          const welcomeTxt = '';
-          try { await sock.sendMessage(sender, { text: welcomeTxt }); } catch {}
-          welcomeSeen.push(sender);
-          saveJSON(WELCOME_DB, welcomeSeen);
-        }
-
+        
         // --- AUTOTYPING ---
         if (autotyping) {
           await ensurePresence(sender);
