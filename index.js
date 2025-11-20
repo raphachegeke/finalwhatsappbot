@@ -8,7 +8,7 @@ import qrcode from 'qrcode';
 
 const AUTH_PATH = './.auth';
 const PORT = process.env.PORT || 3000;
-const EMOJIS = ['❤️','🔥','👍','😂','👏','😍','🎉'];
+const EMOJIS = ['🦋','💡','🏆','🎖️','💎','✨','🚀','🌟','📈','📝','🤝','🎯','⚡','💼','🌐','😉','😍','💞','💌','🔥'];
 
 let latestQR = '';
 let currentSock = null;
